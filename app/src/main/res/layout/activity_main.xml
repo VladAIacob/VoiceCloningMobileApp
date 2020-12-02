@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/_hjjdzbtipzpwgiuo7lmf5qw0ops0imtpjpn2jbxhxk" />
+        app:srcCompat="@drawable/main_image" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -45,6 +45,7 @@
         tools:layout_editor_absoluteX="131dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="What do you want me to say with your voice?"
@@ -60,6 +61,7 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="record"
                 android:text="Record"
                 tools:layout_editor_absoluteX="83dp"
                 tools:layout_editor_absoluteY="559dp" />
@@ -70,7 +72,9 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:progress="1" />
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circle"
+                android:progress="0" />
 
             <TextView
                 android:id="@+id/textView"
@@ -87,6 +91,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
+            android:onClick="imitate"
             android:text="Imitate"
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="648dp" />
