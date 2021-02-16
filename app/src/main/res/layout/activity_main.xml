@@ -87,14 +87,53 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:onClick="imitate"
-            android:text="Imitate"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="648dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/browseButton"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Browse" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="50dp"
+                android:textColor="#0FD7EC"
+                tools:layout_editor_absoluteX="248dp"
+                tools:layout_editor_absoluteY="550dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:onClick="imitate"
+                android:text="Imitate"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="648dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="200dp"
+                android:textColor="#0FD7EC"
+                tools:layout_editor_absoluteX="248dp"
+                tools:layout_editor_absoluteY="550dp" />
+        </LinearLayout>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:text="Back" />
 </RelativeLayout>
