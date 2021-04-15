@@ -97,6 +97,7 @@
                 android:layout_width="127dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="browse"
                 android:text="Browse" />
 
             <TextView
@@ -135,5 +136,6 @@
         android:id="@+id/backButton"
         android:layout_width="74dp"
         android:layout_height="wrap_content"
+        android:onClick="back"
         android:text="Back" />
 </RelativeLayout>
